@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+   
+ <mapper
+   namespace="com.spring.jamplan.viewall.ViewMapper">
+  
+  <resultMap type="com.spring.jamplan.model.PlanVO" id="planViewMap">
+      <result property="selectDate" column="selectDate" />
+      <result property="placeName" column="placeName" />
+      <result property="memo" column="memo" />
+  </resultMap>
+  <!-- result에 무슨값을 넣어줘야할지 머리안돌아감.. 왜 넣어준거지 뭘 넣어줘야하는거지 planNo넣어야함??-->
+  <resultMap type="com.spring.jamplan.model.PlanTableVO" id="planTableMap">
+      <result property="selectDate" column="selectDate" />
+      <result property="placeName" column="placeName" />
+      <result property="memo" column="memo" />
+   </resultMap>
+  
+  
+  
+  <select id="getViewAll" parameterType="com.spring.jamplan.model.PlanVO" resultMap="planViewMap">
+      select * from plan
+  </select>
+   
+  <select id="getPlanTables" parameterType="com.spring.jamplan.model.PlanTableVO" resultMap="planTableMap">
+      select * from planTable
+  </select>
+   
+  <insert id="insertViewAll" parameterType="com.spring.jamplan.model.PlanTableVO">
+       <!-- insert into planTable(calendar,map) values(#{calendar, jdbcType=VARCHAR}, #{map, jdbcType=VARCHAR}) -->
+       <!-- planNo =  planSeq같이사용?? planMapper와비교해보기-->
+       insert into plan(planNo,selectDate,placeName,memo) values(#{planNo, jdbcType=INTEGER}, #{selectDate, jdbcType=VARCHAR}, #{placeName, jdbcType=VARCHAR}, #{memo, jdbcType=VARCHAR}) 
+  </insert>
+  
+  <update id="updateViewAll" parameterType="com.spring.jamplan.model.PlanVO" >
+  	update plan set memo = #{memo, jdbcType=VARCHAR}
+  </update>
+  
+  <update id="fileUpload" parameterType="com.spring.jamplan.model.PlanVO">
+ 		update plan set image = #{image, jdbcType=VARCHAR} where planNo = #{planNo, jdbcType=INTEGER}
+		<!-- insert into plan(image) values (#{image}) -->
+  </update>
+  
+  <update id="updatePlanName" parameterType="com.spring.jamplan.model.PlanVO">
+  		update plan set planName = #{planName, jdbcType=VARCHAR}
+  </update>
+  
+  </mapper>

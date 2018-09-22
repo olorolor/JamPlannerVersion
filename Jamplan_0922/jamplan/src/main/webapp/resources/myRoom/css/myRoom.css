@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+
+/*구글 한글폰트 불러오는 곳*/
+@import url(//fonts.googleapis.com/earlyaccess/jejumyeongjo.css);
+    
+* {
+	font-family: 'Jeju Myeongjo', serif;
+}
+/*구글 한글폰트 불러오는 부분 끝*/
+
+.modal-header-color {
+    color:#FFFFFF;
+    padding:9px 15px;
+    border-bottom:1px solid #eee;
+    background-color: #000000;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+     border-top-left-radius: 5px;
+     border-top-right-radius: 5px;
+}

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+   
+<mapper
+   namespace="com.spring.jamplan.plan.PlanMapper">
+   
+   <resultMap type="com.spring.jamplan.model.PlanTableVO" id="planTableMap">
+      <result property="selectDate" column="selectDate" />
+      <result property="placeName" column="placeName" />
+      <result property="memo" column="memo" />
+   </resultMap>
+   
+   <!-- Calendar 테이블 쓰려한거.
+   <resultMap type="PlanCalendarVO" id="planCalendarMap">
+      <result property="planNo" column="planNo" />
+      <result property="calendar" column="calendar" />
+   </resultMap> -->
+   
+   <resultMap type="com.spring.jamplan.model.MapVO" id="planMapMap">
+      <result property="planNo" column="planNo" />
+      <result property="selectDate" column="selectDate" />
+   </resultMap>
+   
+   
+   
+   <select id="getplanTable" parameterType="com.spring.jamplan.model.PlanTableVO" resultMap="planTableMap">
+      select * from planTable order by selectDate
+   </select>
+   
+   
+   <!--  -->
+   <!-- Calendar 테이블 쓰려한거.
+   <select id="getPlanCalendar" parameterType="com.spring.jamplan2.plan.PlanCalendarVO" resultMap="planCalendarMap">
+      select * from planCalendar where planNo = #{planNo, jdbcType=INTEGER}
+   </select> -->
+   
+   <select id="getPlanMap" parameterType="com.spring.jamplan.model.MapVO" resultMap="planMapMap">
+      select * from planMap where planNo = #{planNo, jdbcType=INTEGER} order by selectDate
+   </select>
+    
+    <insert id="insertPlanTable" parameterType="com.spring.jamplan.model.PlanTableVO">
+       <!-- insert into planTable(calendar,map) values(#{calendar, jdbcType=VARCHAR}, #{map, jdbcType=VARCHAR}) -->
+       insert into planTable(planNo,selectDate,placeName,planSeq) values(#{planNo, jdbcType=INTEGER}, #{selectDate, jdbcType=VARCHAR}, #{placeName, jdbcType=VARCHAR}, #{planSeq, jdbcType=INTEGER})
+    </insert>
+    
+   
+   <update id="savePlanTable" parameterType="com.spring.jamplan.model.PlanTableVO">
+      update planTable set memo = #{memo, jdbcType=VARCHAR} where planSeq = #{planSeq, jdbcType=INTEGER} AND planNo = #{planNo, jdbcType=INTEGER}
+   </update>
+
+</mapper>

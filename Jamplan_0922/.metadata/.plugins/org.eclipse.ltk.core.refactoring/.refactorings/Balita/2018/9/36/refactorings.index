@@ -1,0 +1,31 @@
+1536242202210	Delete element
+1536242338899	Rename package 'admin'
+1536242350229	Rename package 'main'
+1536242361448	Rename package 'manageplan'
+1536242373881	Rename package 'model'
+1536242389075	Rename package 'myinfo'
+1536242406033	Rename package 'myroom'
+1536242419367	Rename package 'plan'
+1536242437042	Rename package 'searchcontroller'
+1536242451769	Rename package 'snslogin'
+1536243366282	Delete element
+1536243895515	Delete elements
+1536243927489	Rename package 'admin'
+1536243936145	Rename package 'main'
+1536243980175	Delete element
+1536243989832	Rename package 'model'
+1536243996344	Rename package 'myinfo'
+1536244001145	Rename package 'myroom'
+1536244007632	Rename package 'plan'
+1536244013936	Rename package 'searchcontroller'
+1536244019633	Rename package 'snslogin'
+1536244288809	Delete element
+1536245782342	Rename package 'com.spring.jamplan.admin'
+1536245798216	Rename package 'com.spring.jamplan.main'
+1536245808745	Rename package 'com.spring.jamplan.manageplan'
+1536245818886	Rename package 'com.spring.jamplan.model'
+1536245827016	Rename package 'com.spring.jamplan.myinfo'
+1536245835605	Rename package 'com.spring.jamplan.myroom'
+1536245844999	Rename package 'com.spring.jamplan.plan'
+1536245856013	Rename package 'com.spring.jamplan.searchcontroller'
+1536245863813	Rename package 'com.spring.jamplan.snslogin'

@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Thu Sep 20 00:08:20 KST 2018
+org.eclipse.jst.jee.server\:/binary\:C\:\\BigDeep\\maven\\repository\\org\\springframework\\spring-web\\4.1.7.RELEASE\\spring-web-4.1.7.RELEASE.jar=C\:\\BigDeep\\sts-bundle\\pivotal-tc-server\\instances\\base-instance\\wtpwebapps\\jamplan\\WEB-INF\\lib\\spring-web-4.1.7.RELEASE.jar
+org.eclipse.jst.jee.server\:jamplan=C\:\\BigDeep\\sts-bundle\\pivotal-tc-server\\instances\\base-instance\\wtpwebapps\\jamplan

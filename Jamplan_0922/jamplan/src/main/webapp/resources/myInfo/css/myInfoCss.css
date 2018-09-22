@@ -1,0 +1,400 @@
+@charset "UTF-8";
+/**@author Taehyuk, Kim
+
+ * 
+ */
+ 
+		* {box-sizing: border-box;}
+	
+	
+	
+		body {
+			background-color: #EAE6DA; /* #D1B894 */
+			height: 100%;
+		}
+		
+		.container-fluid {
+			padding: 0px !important;
+		}
+		
+		#main-container {
+			margin: 0 auto;
+		}
+		
+	
+		/*>>>>>>>>>>>>>> top bar에 대한 css <<<<<<<<<<<<<<<<*/
+		.topnav {
+		  position: relative;
+		  overflow: hidden;
+		  background-color: rgb(72, 81, 103);
+		  opacity: 20;
+		}
+		
+		.topnav a {
+		  float: left;
+		  color: #E7E1C3;
+		  text-align: center;
+		  padding: 14px 16px;
+		  text-decoration: none;
+		  font-size: 17px;
+		  margin: 0 auto;
+		}
+		
+		.topnav a:hover {
+		  background-color: #ddd;
+		  color: black;
+		}
+		
+		.topnav-centered a {
+		  float: none;
+		  position: absolute;
+		  top: 50%;
+		  left: 50%;
+		  transform: translate(-50%, -50%);
+		  padding: 20px;
+			
+		}
+		
+		.topnav-right {
+		  float: right;
+		}
+		
+		.topnav-right a {
+			margin-top: 16px;
+			margin-bottom: 16px;
+			padding-top: 16px; 
+		}
+		/*>>>>>>>>>>>>>>> top bar에 대한 css 끝 <<<<<<<<<<<<*/
+		
+		
+		/*>>>>>>>>>>>>>>>> 사이드바에 대한 css<<<<<<<<<<<<<<<< */
+	    .row.content {
+	    	margin: auto;
+	    	height: 1500px
+	    }
+	    
+	    .sidenav {
+	      background-color: #f1f1f1;
+	      height: 100%;
+	    }
+	    
+	    .input-group-btn {
+	    	padding-left: 5px;
+	    }
+	    
+	    footer {
+	      background-color: #555;
+	      color: white;
+	      padding: 15px;
+	    }
+	    
+	    @media screen and (max-width: 767px) {
+	      .sidenav {
+	        height: auto;
+	        padding: 15px;
+	      }
+	      
+	      .row.content {height: auto;} 
+	    }
+		/*>>>>>>>>>>>>>>>> 사이드바에 대한 css<<<<<<<<<<<<<<<< */
+		
+		
+		/*>>>>>>>>>>>>>>>>> nav-tabs에 대한 css <<<<<<<<<<<<<<<<<*/
+		.nav-tabs {
+			margin: 0 auto;
+		}
+		
+		.nav-tabs .search-container {
+			float: right;
+		}
+		
+		.nav-tabs input[type=text] {
+		  padding: 6px;
+		  
+		  font-size: 17px;
+		  border: none;
+		}
+		
+		.nav-tabs .search-container button {
+		  float: right;
+		  padding: 6px;
+		  margin-right: 16px;
+		  background: #ddd;
+		  font-size: 17px;
+		  border: none;
+		  cursor: pointer;
+		}
+		/*>>>>>>>>>>>>>>>>> nav-tabs에 대한 css 끝<<<<<<<<<<<<<<<<<*/
+		
+		
+	    /*>>>>>>>>>>>>>>>>> 프로필 사진 업로드 부분에 대한 css <<<<<<<<<<<<<<<<<*/
+	    #imageSearch {
+	       border-radius: 5px;
+	       padding: 10px;
+		   background: red; 
+		   display: table;
+		   color: #fff;
+	    }
+	    
+	    input[type="file"] {
+		    display: none;
+		    
+		}
+		
+		#imagePreview {
+		  border-radius: 50%;
+		}
+	    /*>>>>>>>>>>>>>>>>> 프로필 사진 업로드 부분에 대한 css 끝<<<<<<<<<<<<<<<<<*/
+	
+	
+		/*>>>>>>>>>>>>>>>>> infoForm에 대한 css <<<<<<<<<<<<<<<<<<<<<<<*/
+		#infoForm {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin: 15px;
+        padding: 20px;
+        /* border-right: 1px solid;
+        border-left: 1px solid; */
+        position: relative;
+	    }
+	
+	    #infoForm > div {
+	        float: right;
+	        margin-bottom: 30px;
+	    }
+	    #infoForm > div > p{
+	        font-size: 12px;
+	        margin-bottom: 3px;
+	    }
+	    #infoForm > div > input{
+	        font-size: 1em;
+	        letter-spacing:1px;
+	        padding: 5px;
+	        border: 0;
+	        border-bottom: 1px solid silver;
+	        width: 100%;
+	       
+	    }
+	
+	    #infoForm > p:last-of-type{
+	        text-align: center;
+	        padding-top: 50px;
+	        display: table;
+	        width: 100%;
+	        color:white;
+	    }
+	
+	    #infoForm > p:last-of-type > a{
+	        cursor:pointer;
+	        border:0;
+	        padding: 10px 25px;
+	        background: silver;
+	        border-radius: 28px;
+	        font-size: 1em; 
+	    }
+	
+	    .term{
+	        padding-top: 40px;
+	        display: flex;
+	        width: 100%;
+	        align-items: center;
+	    }
+	    
+	    
+	    /* select에 대한 css  */
+	    /* ===== Horizontal Rule ===== */
+		.rule {
+		  margin: 10px 0;
+		  border: none;
+		  height: 1.5px;
+		  background-image: linear-gradient(left, #f0f0f0, #c9bbae, #f0f0f0);
+		}
+		
+		/* ===== Select Box ===== */
+		.sel {
+		  font-size: 1em;
+		  display: inline-block;
+		  margin: 1em 1em;
+		  width: 100%;
+		  background-color: transparent;
+		  position: relative;
+		  cursor: pointer;
+		}
+		
+		
+		
+		.sel.active::before {
+		  transform: rotateX(-180deg);
+		}
+		
+		.sel__placeholder {
+		  display: block;
+		  font-size: 1em;
+		  padding: 0.2em 0.5em;
+		  text-align: left;
+		  pointer-events: none;
+		  user-select: none;
+		  visibility: visible;
+		}
+		
+		.sel.active .sel__placeholder {
+		  visibility: hidden;
+		}
+		
+		.sel__placeholder::before {
+		  position: absolute;
+		  top: 0;
+		  bottom: 0;
+		  left: 0;
+		  right: 0;
+		  padding: 0.2em 0.5em;
+		  content: attr(data-placeholder);
+		  visibility: hidden;
+		}
+		
+		.sel.active .sel__placeholder::before {
+		  visibility: visible;
+		}
+		
+		.sel__box {
+		  position: absolute;
+		  top: calc(100% + 4px);
+		  
+		  display: none;
+		  list-style-type: none;
+		  text-align: left;
+		  font-size: 1em;
+		  background-color: #FFF;
+		  width: calc(100% + 8px);
+		  box-sizing: border-box;
+		}
+		
+		.sel.active .sel__box {
+		  display: block;
+		  animation: fadeInUp 500ms;
+		}
+		
+		.sel__box__options {
+		  display: list-item;
+		  font-size: 1em;
+		  padding: 0.5em 1em;
+		  user-select: none;
+		}
+		
+		.sel__box__options::after {
+		  content: '\f00c';
+		  font-size: 0.5em;
+		  margin-left: 5px;
+		  display: none;
+		}
+		
+		.sel__box__options.selected::after {
+		  display: inline;
+		}
+		
+		/* ----- Select Box Black Panther ----- */
+		.sel {
+		  border-bottom: 1px solid silver;
+		}
+		
+		
+		/* ===== Keyframes ===== */
+		@keyframes fadeInUp {
+		  from {
+		    opacity: 0;
+		    transform: translate3d(0, 20px, 0);
+		  }
+		
+		  to {
+		    opacity: 1;
+		    transform: none;
+		  }
+		}
+		
+		@keyframes fadeOut {
+		  from {
+		    opacity: 1;
+		  }
+		
+		  to {
+		    opacity: 0;
+		  }
+		}
+	    /* select에 대한 css 끝 */
+	    
+	    
+	    /* submit 버튼에 대한 css */
+	    .btn {
+		  border: 2px solid black;
+		  background-color: white;
+		  color: black;
+		  padding: 14px 28px;
+		  font-size: 16px;
+		  cursor: pointer;
+		}
+		
+		
+		.success {
+		  border-color: #4CAF50;
+		  color: green;
+		}
+		
+		.success:hover {
+		  background-color: #4CAF50;
+		  color: white;
+		}
+	    
+	    /*>>>>>>>>>>>>>>>>> infoForm에 대한 css 끝 <<<<<<<<<<<<<<<<<<<<<<<*/
+	    
+	    
+	    /*>>>>>>>>>>>>>>>>> autocomplete에 대한 css <<<<<<<<<<<<<<<<<<<<<<<*/
+	    .autocomplete {
+		  /*the container must be positioned relative:*/
+		  position: relative;
+		  display: inline-block;
+		}
+		
+		.autocomplete-items {
+		  position: absolute;
+		  border: 1px solid #d4d4d4;
+		  border-bottom: none;
+		  border-top: none;
+		  z-index: 99;
+		  /*position the autocomplete items to be the same width as the container:*/
+		  top: 100%;
+		  left: 0;
+		  right: 0;
+		}
+		
+		.autocomplete-items div {
+		  padding: 10px;
+		  cursor: pointer;
+		  background-color: #fff; 
+		  border-bottom: 1px solid #d4d4d4; 
+		}
+		
+		.autocomplete-items div:hover {
+		  /*when hovering an item:*/
+		  background-color: #e9e9e9; 
+		}
+		
+		.autocomplete-active {
+		  /*when navigating through the items using the arrow keys:*/
+		  background-color: DodgerBlue !important; 
+		  color: #ffffff; 
+		}
+		
+		/*>>>>>>>>>>>>>>>>> autocomplete에 대한 css 끝 <<<<<<<<<<<<<<<<<<<<<<<*/
+		
+		/*>>>>>>>>>>>>>>>>> 팀관리 테이블에 대한 css <<<<<<<<<<<<<<<<<<<<<<<*/
+		#leaderTable {
+		  margin: 50px auto;
+		}
+		
+		#leaderTable tr {
+		  margin: 0px auto;
+		}
+		
+		/*>>>>>>>>>>>>>>>>> 팀관리 테이블에 대한 css 끝 <<<<<<<<<<<<<<<<<<<<<<<*/
+	

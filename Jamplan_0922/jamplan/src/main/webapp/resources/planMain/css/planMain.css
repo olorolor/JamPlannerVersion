@@ -1,0 +1,189 @@
+@charset "UTF-8";
+	* {box-sizing: border-box;}
+	
+	
+	
+		body {
+			background-color: #EAE6DA; /* #D1B894 */
+			height: 100%;
+		}
+		
+		.row {
+			margin: auto;
+		}
+	
+		/*>>>>>>>>>>>>>> top bar에 대한 css <<<<<<<<<<<<<<<<*/
+		.topnav {
+		  position: relative;
+		  overflow: hidden;
+		  background-color: rgb(72, 81, 103);
+		  opacity: 20;
+		}
+		
+		.topnav a {
+		  float: left;
+		  color: #E7E1C3;
+		  text-align: center;
+		  padding: 14px 16px;
+		  text-decoration: none;
+		  font-size: 17px;
+		  margin: 0 auto;
+		}
+		
+		.topnav a:hover {
+		  background-color: #ddd;
+		  color: black;
+		}
+		
+		.topnav-centered a {
+		  float: none;
+		  position: absolute;
+		  top: 50%;
+		  left: 50%;
+		  transform: translate(-50%, -50%);
+		  padding: 20px;
+			
+		}
+		
+		.topnav-right {
+		  float: right;
+		}
+		
+		.topnav-right a {
+			margin-top: 16px;
+			margin-bottom: 16px;
+			padding-top: 16px; 
+		}
+		/*>>>>>>>>>>>>>>> top bar에 대한 css 끝 <<<<<<<<<<<<*/
+		
+		
+		#main-container {
+			margin: 0 auto;
+			margin-top: 120px;
+		}
+		
+		#planManage {
+			margin: auto;
+		}
+		
+		.nav-tabs {
+			margin: 0 auto;
+		}
+		/*>>>>>>>>>>>>> aside부분의 채팅창에 대한 css <<<<<<<<<<<<<<<*/
+
+		.card {
+			position: absolute;
+			bottom: 0;
+			float: right;
+		}
+		
+		.card-header {
+			padding-right:10px;
+			padding-left: 10px;
+			
+		}
+		/*>>>>>>>>>>>> aside부분의 채팅창에 대한 css 끝 <<<<<<<<<<<<*/
+
+		
+		/*>>>>>>>>>>>> side bar 세로 정렬 <<<<<<<<<<<<<<<<<<<<<<<*/
+		.drawer-nav {
+			color: rgba(0, 0, 0, .87);
+			background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+							url("https://www.avenlylanetravel.com/wp-content/uploads/2015/07/public-domain-images-free-stock-photos-high-quality-resolution-downloads-public-domain-archive-17-1000x750.jpg");
+			
+			background-repeat: no-repeat;
+			background-attachment: scroll;
+		}
+		
+		.drawer-menu li {
+			display: list-item;
+			width: 260px;
+		}
+		
+		.drawer-hamburger {
+			padding-bottom: 18px;
+		}
+		/*>>>>>>>>>>>>>>>> 사이드바 세로 정렬 부분 끝 <<<<<<<<<<<<<*/
+		
+		
+		/*>>>>>>>>>>>>>>>> 채팅창에 대한 css <<<<<<<<<<<<<<<<<<*/
+		.open-button {
+		  background-color: #BD3D3A;
+		  color: white;
+		  padding: 16px 20px;
+		  border: none;
+		  cursor: pointer;
+		  
+		  position: fixed;
+		  bottom: 23px;
+		  right: 28px;
+		  width: 280px;
+		}
+		
+		.avatar {
+		    vertical-align: middle;
+		    width: 50px;
+		    height: 50px;
+		    border-radius: 50%;
+		}
+		
+		/*>>>>>>>>>>>>> Enter버튼에 대한 css <<<<<<<<<<<<<<*/
+		#sendButton {
+			width: 20%;
+			padding-right: 10px;
+			padding-left: 10px;
+			margin-bottm: 0px;
+		}
+		
+		/* The popup form - hidden by default */
+		.form-popup {
+		  display: none;
+		  position: fixed;
+		  bottom: 0;
+		  right: 15px;
+		  border: 3px solid #f1f1f1;
+		  z-index: 9;
+		}
+		
+		/* Add styles to the form container */
+		.form-container {
+		  max-width: 300px;
+		  padding: 10px;
+		  background-color: white;
+		}
+		
+		/* Full-width input fields */
+		.form-container input[type=text] {
+		  width: 70%;
+		  padding: 15px;
+		  margin: 7px 0 15px 0;
+		  border: none;
+		  background: #f1f1f1;
+		}
+		
+		/* When the inputs get focus, do something */
+		.form-container input[type=text]:focus {
+		  background-color: #ddd;
+		  outline: none;
+		}
+		
+		/* Set a style for the submit/login button */
+		.form-container .btn {
+		  background-color: #4CAF50;
+		  color: white;
+		  padding: 16px 20px;
+		  border: none;
+		  cursor: pointer;
+		  width: 100%;
+		  opacity: 0.8;
+		}
+		
+		/* Add a red background color to the cancel button */
+		.form-container .cancel {
+		  background-color: #B93A32;
+		}
+		
+		/* Add some hover effects to buttons */
+		.form-container .btn:hover, .open-button:hover {
+		  opacity: 1;
+		}

@@ -1,0 +1,181 @@
+@charset "UTF-8";
+
+
+/*구글 한글폰트 불러오는 곳*/
+@import url(//fonts.googleapis.com/earlyaccess/jejumyeongjo.css);
+    
+* {
+	font-family: 'Jeju Myeongjo', serif;
+}
+/*구글 한글폰트 불러오는 부분 끝*/
+
+.planManage{
+	
+}
+
+
+body {
+	color: rgba(0, 0, 0, .87);
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+		url("https://static1.squarespace.com/static/52da9677e4b03d314575985a/t/575d4453e707eb86c449a4b6/1465730134655/Vienna+Hotels+with+Best+Views+-+Header.jpg?format=1500w");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.navbar {
+	background-color: rgba(0, 0, 0, .7);
+	opacity: 20;
+}
+
+.nav-item {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+#main-container {
+	margin-top: 120px;
+}
+
+.nav-item {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+#main-container {
+	margin-top: 120px;
+}
+
+#teamList {
+	width: 80%;
+	text-align: center;
+	background-color: rgba(255, 255, 255, .5);
+	border-radius: 5px;
+	margin: 0 auto;
+}
+
+#teamList>button {
+	margin: 0 auto;
+	text-align: center;
+	
+}
+
+/* 버튼 속성 중 display 속성에 대한 변경*/
+.btn-outline-light {
+	display: block;
+	width: 50%;
+}
+
+/* modal창 내 input 버튼에 대한 css */
+input {
+	margin: 40px 25px;
+	width: 200px;
+	display: block;
+	border: none;
+	padding: 20px 0;
+	border-bottom: solid 1px #1abc9c;
+	background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 96%,
+		#1abc9c 4%);
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%,
+		#1abc9c 4%);
+	background-position: -200px 0;
+	background-size: 200px 100%;
+	background-repeat: no-repeat;
+	color: #0e6252;
+}
+
+input:focus, input:valid {
+	box-shadow: none;
+	outline: none;
+	background-position: 0 0;
+}
+
+
+input:focus::-webkit-input-placeholder, input:valid::-webkit-input-placeholder
+	{
+	color: #1abc9c;
+	font-size: 16px;
+	-webkit-transform: translateY(-20px);
+	transform: translateY(-20px);
+	visibility: visible !important;
+}
+/* modal창 내 input 버튼에 대한 css 끝*/
+
+#searchTeamName {
+	margin-top: 40px;
+	margin-bottom: 40px;
+	margin-right: 10px;
+	margin-left: 40px;
+	width: 200px;
+	display: block;
+	border: none;
+	padding: 20px 0;
+	border-bottom: solid 1px #221F2B;
+	color: #221F2B;
+}
+
+#searchTeamName:focus::-webkit-input-placeholder, #searchTeamName:valid::-webkit-input-placeholder
+	{
+	color: #221F2B;
+	font-size: 16px;
+	font-weight: 900;
+	visibility: visible !important;
+}
+
+
+#searchButtonParent {
+	margin: 40px 0px;
+}
+
+#searchButton {
+	height: 65px;
+	bottom: 0;
+	text-color: rgb(54,51,119);
+	background-color: rgba(0,0,0, .0);
+}
+
+.media {
+	background-color: rgba(255, 255, 255, .3);
+	border-radius: 5px;
+	border: none;
+}
+
+ul {
+	list-style: none;
+	display: inline-block;
+}
+
+<!-- 메시지창을 위한 css -->
+.panel {
+	margin-bottom: 0px;
+}
+
+.top-bar {
+	background: #666;
+	color: white;
+	padding: 10px;
+	position: relative;
+	overflow: hidden;
+	padding-right: 5px;
+}
+
+.box-position {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+<!-- 메시지창을 위한 css 끝-->
+
+footer {
+	background-color: rgba(0, 0, 0, .5);
+}
+.tdOdd, .tdEven {
+	padding : 12px 0 12px 0;
+	width: 60px;
+}
+.tdOdd {
+	margin-right : -32px;
+}

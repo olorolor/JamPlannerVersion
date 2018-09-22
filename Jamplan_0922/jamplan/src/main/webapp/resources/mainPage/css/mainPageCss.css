@@ -1,0 +1,170 @@
+@charset "UTF-8";
+
+
+		font-family: 'Noto Sans KR', sans-serif !important;
+
+.row {
+   height:450px;
+}
+.main_top_title {
+    font-size: 44px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 75px;
+}
+ #searchBtn{
+   height: 50px;
+} 
+.search_area {
+    width: 640px;
+    height: 138px;
+    border-radius: 3px;
+    background: url(/res/img/component/bg/bgb_60.png) repeat;
+    margin: 0 auto;
+    margin-top: 60px;
+    padding: 20px;
+    position: relative;
+}
+.search_input {
+    width: 93%;
+    height: 50px;
+    padding-left: 15px;
+    border: none;
+    font-size: 20px;
+    color: #b3b3b3;
+    background: url(/res/img/area/area_search_ico.gif) no-repeat white;
+    background-position: center right;
+    margin-bottom: 10px;
+}
+
+
+.main_top_title {
+    font-size: 44px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 75px;
+}
+ #searchBtn{
+	height: 50px;
+} 
+.search_area {
+    width: 640px;
+    height: 138px;
+    border-radius: 3px;
+    background: url(/res/img/component/bg/bgb_60.png) repeat;
+    margin: 0 auto;
+    margin-top: 60px;
+    padding: 20px;
+    position: relative;
+}
+.search_input {
+    width: 93%;
+    height: 50px;
+    padding-left: 15px;
+    border: none;
+    font-size: 20px;
+    color: #b3b3b3;
+    background: url(/res/img/area/area_search_ico.gif) no-repeat white;
+    background-position: center right;
+    margin-bottom: 10px;
+}
+
+.rightMenu{
+   margin:0 auto;
+   display: table;
+   height: 400px;
+   overflow: hidden;
+   text-align: center;
+}
+
+.subrightMenu{
+   display: table-cell;
+}
+
+.container1{
+   margin-top:60px;
+}
+
+
+h1, h2, h3, h4, h5, p {
+    font-family: NanumSquareR, sans-serif;
+    font-weight: 500;
+    color: #333;
+}
+
+h1, h3 {
+    margin-top: 35px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+#top_navbar {
+    background: rgba(0,0,0,0.7);
+}
+
+#top_navbar-nav > li > a {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.separator {
+    background: #59e;
+    margin-top: 80px;
+    padding: 21px;
+    text-align: center;
+    color: #fff;
+}
+
+.red {
+    background: #fcc;
+    border: #eaa solid 4px;
+}
+
+.yellow {
+    background: #f6f6c0;
+    border: #dd7 solid 4px;
+}
+
+.green {
+    background: #bfc;
+    border: #ada solid 4px;
+}
+
+.bluegreen {
+    background: #aee;
+    border: #8dd solid 4px;
+}
+
+.blue {
+    background: #bcf;
+    border: #9ae solid 4px;
+}
+
+/*  풀어주기   */
+.pet_image {
+    width: 100%;
+}
+
+.fa-file {
+    font-size: 10px;
+}
+
+.modal-body img {
+    width: 100%;
+}
+
+
+.carousel-caption * {
+    color: white;
+}
+
+.carousel-inner img {
+    width: 100%;
+}
+img{
+    vertical-align: middle;
+}
+
+footer {
+	height: 200px !important;
+}
