@@ -1,3 +1,6 @@
+# Jam planner
+Jam planner is a real-time planner for traveling with friends, families and so on.
+
 <center><img src="https://user-images.githubusercontent.com/36757183/46366731-da15a800-c6b6-11e8-9971-2c84213f9446.png" ></center>
 
 # Jam planner
