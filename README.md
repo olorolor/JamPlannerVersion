@@ -24,6 +24,8 @@
 - _가입된 팀에서의 역할(팀장, 일반 팀원)에 따라 팀 관리(팀 삭제 혹은 탈퇴) 기능._
 
 ## 실제 사용 영상
-<iframe width="640" height="360" src="https://youtu.be/f0NoPkA5xq8" frameborder="0" gesture="media" allowfullscreen=""></iframe>
+- _사용자가 날짜, 장소, 세부일정을 정하고 동행을 구합니다. 동행이 수락되고 팀원끼리 같이 계획을 짜는 모습입니다._
+[![Watch the video](https://raw.github.com/GabLeRoux/WebMole/master/ressources/WebMole_Youtube_Video.png)](https://youtu.be/f0NoPkA5xq8)
+
 
 
