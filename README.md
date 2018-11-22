@@ -1,4 +1,4 @@
-# Jam planner
+# Jam planner 팀 프로젝트
 ### Jam Planner는 여러 사람이 모여 함께 여행 일정을 만들고 공유하여 동행을 구할 수 있는 웹어플리케이션입니다.
 <center><img src="https://user-images.githubusercontent.com/36757183/46366731-da15a800-c6b6-11e8-9971-2c84213f9446.png" ></center>
 
