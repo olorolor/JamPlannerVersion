@@ -25,7 +25,6 @@
 
 ## 실제 사용 영상
 - _사용자가 날짜, 장소, 세부일정을 정하고 동행을 구합니다. 동행이 수락되고 팀원끼리 같이 계획을 짜는 모습입니다._
-[![Watch the video](https://raw.github.com/GabLeRoux/WebMole/master/ressources/WebMole_Youtube_Video.png)](https://youtu.be/f0NoPkA5xq8)
-
+[![Video Label](http://img.youtube.com/vi/f0NoPkA5xq8/0.jpg)](https://youtu.be/f0NoPkA5xq8?t=0s) Video Label
 
 
